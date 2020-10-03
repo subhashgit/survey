@@ -1,7 +1,8 @@
 
 # Survey
 
-<img src="./assets/image/Screenshot02.png"/> <img src="./assets/image/Screenshot011.png"/> <img src="./assets/image/Screenshot03.png"/> <img src="./assets/image/Screenshot04.png"/> <img src="./assets/image/Screenshot05.png"/>
+<img src="./assets/image/Screenshot02.png"/> <img src="./assets/image/Screenshot01.png"/> 
+
 
 
 ## Objetiv
