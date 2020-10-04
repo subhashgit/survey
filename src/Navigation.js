@@ -1,12 +1,11 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { AntDesign, Ionicons } from '@expo/vector-icons';
-
-import PayButton from './components/PayButton'
-
-import HomeScreen from './screens/Home';
-import WalletScreen from './screens/Wallet';
+import HomeScreen from './screens/Dashboard';
+import ProjectScreen from './screens/Project';
 import PayScreen from './screens/Pay';
+import LoginScreen from './screens/Login';
+
 import NotificationScreen from './screens/Notification';
 
 const Tab = createBottomTabNavigator();
@@ -31,19 +30,12 @@ const icons = {
 };
 
 export default function Navigation() {
-  return (
+  return ( 
     <Tab.Navigator
-      initialRouteName="Wallet"
+      initialRouteName="Project"
       screenOptions={({ route, navigation }) => ({
         tabBarIcon: ({ color, size, focused }) => {
-          if (route.name === 'Pay') {
-            return (
-              <PayButton 
-                onPress={() => navigation.navigate('Pay')}
-                focused={focused}
-              />
-            )
-          }
+        
           const { lib: Icon, name } = icons[route.name];
           return <Icon name={name} size={size} color={color} />;
         },
@@ -66,7 +58,7 @@ export default function Navigation() {
       />
       <Tab.Screen 
         name="Wallet"  
-        component={WalletScreen}
+        component={ProjectScreen}
         options={{
           title: 'Project',
         }}

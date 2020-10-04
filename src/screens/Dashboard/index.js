@@ -9,7 +9,7 @@ import Activities from '../../components/Activities';
 import Tips from '../../components/Tips';
 import Banner from '../../components/Banner';
 
-export default function Home() {
+export default function Dashboard() {
   return (
     <Wrapper>
       <Container>

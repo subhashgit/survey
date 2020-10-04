@@ -1,10 +1,7 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import * as firebase from 'firebase';
-import App from './src';
-import { firebaseConfig } from './config';
-firebase.initializeApp(firebaseConfig);
-
-export default function Main () {
-  return <App />;
+import LoginScreen from './src/screens/Login';
+//import App from './src';
+export default function Home () {
+  return <LoginScreen />;
 }

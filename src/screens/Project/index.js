@@ -40,7 +40,7 @@ import {
 import creditCard from '../../../assets/images/credit-card.png'
 
 
-export default function Home() {
+export default function Project() {
   const [isVisible, setIsVisible] = useState(true);
   const [useBalance, setUseBalance] = useState(true);
 
