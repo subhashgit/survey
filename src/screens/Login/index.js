@@ -2,9 +2,6 @@ import React from 'react';
 
 import { StyleSheet,  Image, Text } from 'react-native';
 import { Container,  Content, Form, Item, Input, Label, Button, View, Linking } from 'native-base';
-//import * as firebase from 'firebase';
-//import { firebaseConfig } from '../../../config';
-//firebase.initializeApp(firebaseConfig);
 
 export default function Login() {
   return (
